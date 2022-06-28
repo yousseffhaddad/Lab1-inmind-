@@ -21,7 +21,7 @@ public class StudentController : ControllerBase
     };
 
     [HttpGet]
-    public List<Student>  Getstudents()
+    public List<Student>  Getstudents() 
     {
         return students;
     }
@@ -53,11 +53,19 @@ public class StudentController : ControllerBase
 
     }
     [HttpPost("name/{name},id/{id}")]
-    public List<Student> UpdateStudentName([FromBody] long id,string name)
+    public List<Student> UpdateStudentName([FromRoute] long id,string name)
     {
-        _helper.ChangeUserName(id,name,students);
-        return students;
+        return _helper.ChangeUserName(id,name,students);
+        
     }
+    
+    [HttpDelete("{id}")]
+    public List<Student> DeleteStudent([FromRoute] long id)
+    {
+        return _helper.DeleteUser(id,students);
+        
+    }
+    
     
     
 }

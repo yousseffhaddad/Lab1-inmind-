@@ -8,7 +8,8 @@ public interface IStudentHelper
     public Student GetStudentsName(List<Student> students, string name);
     
     public string GetCurrentDate(string language);
-    public void ChangeUserName(long id,string name,List<Student> students);
+    public List<Student>  ChangeUserName(long id,string name,List<Student> students);
+    public List<Student>  DeleteUser(long id,List<Student> students);
     
     
 }
