@@ -20,4 +20,18 @@ public class StudentHelper1 : IStudentHelper
         return DateTime.Now.Date.ToString("MM/dd/yyyy h:mm tt", new CultureInfo(language));
 
     }
+    
+    public void ChangeUserName(long id,string name,List<Student> students)
+    {
+        foreach (var student in students)
+        {
+            if (student.id == id)
+            {
+                student.name = name;
+            }
+            
+        }
+
+    }
+    
 }

@@ -52,6 +52,12 @@ public class StudentController : ControllerBase
         return _helper.GetCurrentDate(lang);
 
     }
+    [HttpPost("name/{name},id/{id}")]
+    public List<Student> UpdateStudentName([FromBody] long id,string name)
+    {
+        _helper.ChangeUserName(id,name,students);
+        return students;
+    }
     
     
 }
