@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 
-builder.Services.AddScoped<IStudentHelper, StudentHelper1>();
+builder.Services.AddTransient<IStudentHelper, StudentHelper1>();
 
 // Add services to the container.
 

@@ -21,9 +21,9 @@ public class StudentHelper1 : IStudentHelper
 
     }
     
-    public void ChangeUserName(long id,string name,List<Student> students)
+    public List<Student> ChangeUserName(long id,string name,List<Student> students)
     {
-        foreach (var student in students)
+        foreach (Student student in students)
         {
             if (student.id == id)
             {
@@ -31,6 +31,22 @@ public class StudentHelper1 : IStudentHelper
             }
             
         }
+
+        return students;
+
+    }
+    public List<Student>  DeleteUser(long id,List<Student> students)
+    {
+        foreach (Student x in students)
+        {
+            if (x.id == id)
+            {
+                students.Remove(x);
+            }
+            
+        }
+        return students;
+        
 
     }
     
