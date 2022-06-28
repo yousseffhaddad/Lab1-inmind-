@@ -46,4 +46,12 @@ public class StudentController : ControllerBase
 
     }
     
+    [HttpGet("{lang}")]
+    public string GetDate([FromRoute]string lang)
+    {
+        return _helper.GetCurrentDate(lang);
+
+    }
+    
+    
 }
