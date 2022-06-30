@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JUWa4NAt7h4/ftmP/GGrWzqbKuob+9QXkDb8KpEpDcw=",
+  "Hash": "EAh4I9Dq86GEi0LcypeJn0Er1so24j13yCSEez7W33w=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\client.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\RiderProjects\\Lab1-inmind-\\wwwroot\\images\\driver.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\RiderProjects\\Lab1-inmind-\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/driver.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\driver.png"
     }
   ]
 }

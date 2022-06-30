@@ -18,8 +18,18 @@ public class StudentHelper1 : IStudentHelper
 
     public string GetCurrentDate(string language)
     {
-        return DateTime.Now.Date.ToString("MM/dd/yyyy h:mm tt", new CultureInfo(language));
+        string date = null;
+        try
+        {
+            date= DateTime.Now.ToString( new CultureInfo(language));
+        }
+        catch(CultureNotFoundException c)
+        {
+            return c.Message;
+            
+        }
 
+        return date;
     }
     
     public List<Student> ChangeUserName(long id,string name,List<Student> students)
