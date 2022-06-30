@@ -11,6 +11,7 @@ public class Student
     
     public string lastname { get; set; }
 
+    public string qrcode { get; set; }
 
     public  Student(long id, String name, String email)
     {
