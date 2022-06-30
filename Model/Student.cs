@@ -9,10 +9,6 @@ public class Student
     public string name { get; set; }
     public string email { get; set; }
     
-    public string lastname { get; set; }
-
-    public string qrcode { get; set; }
-
     public  Student(long id, String name, String email)
     {
         this.id = id;
