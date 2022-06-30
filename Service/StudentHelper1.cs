@@ -1,5 +1,6 @@
 using System.Globalization;
 using WebApplication1.abstraction;
+using WebApplication1.Exceptions;
 using WebApplication1.Model;
 
 namespace WebApplication1.Service;
@@ -23,26 +24,34 @@ public class StudentHelper1 : IStudentHelper
     
     public List<Student> ChangeUserName(long id,string name,List<Student> students)
     {
+        bool flag = false;
         foreach (Student student in students)
         {
             if (student.id == id)
             {
+                flag = true;
                 student.name = name;
             }
-            
         }
-
+        if (!flag)
+        {
+            throw new StudentNotFoundException("student not found");
+        }
         return students;
-
+        
     }
-    public List<Student>  DeleteUser(long id,List<Student> students)
+
+    public List<Student> DeleteUser(long id, List<Student> students)
     {
+
         var studentToRemove = students.SingleOrDefault(r => r.id == id);
         if (studentToRemove != null)
+        {
             students.Remove(studentToRemove);
-        return students;
+            return students;
+        }
 
-
+        throw new StudentNotFoundException("Student not Found");
     }
-    
+
 }

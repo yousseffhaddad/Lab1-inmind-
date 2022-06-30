@@ -9,7 +9,7 @@ public interface IStudentHelper
     
     public string GetCurrentDate(string language);
     public List<Student>  ChangeUserName(long id,string name,List<Student> students);
-    public List<Student>  DeleteUser(long id,List<Student> students);
+    public List<Student>   DeleteUser(long id,List<Student> students);
     
     
 }
