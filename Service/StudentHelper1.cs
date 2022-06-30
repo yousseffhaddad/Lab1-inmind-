@@ -37,16 +37,11 @@ public class StudentHelper1 : IStudentHelper
     }
     public List<Student>  DeleteUser(long id,List<Student> students)
     {
-        foreach (Student x in students)
-        {
-            if (x.id == id)
-            {
-                students.Remove(x);
-            }
-            
-        }
+        var studentToRemove = students.SingleOrDefault(r => r.id == id);
+        if (studentToRemove != null)
+            students.Remove(studentToRemove);
         return students;
-        
+
 
     }
     
