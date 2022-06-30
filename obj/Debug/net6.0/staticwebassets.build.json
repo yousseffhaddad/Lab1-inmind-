@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7VC51M3egokLQ3f/5Up55UAaySbaO7oEVWIUJY7Hnv0=",
+  "Hash": "JUWa4NAt7h4/ftmP/GGrWzqbKuob+9QXkDb8KpEpDcw=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -10,10 +10,28 @@
     {
       "Name": "WebApplication1\\wwwroot",
       "Source": "WebApplication1",
-      "ContentRoot": "C:\\Users\\user\\RiderProjects\\WebApplication1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\RiderProjects\\Lab1-inmind-\\wwwroot\\",
       "BasePath": "_content/WebApplication1",
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\RiderProjects\\Lab1-inmind-\\wwwroot\\images\\client.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\RiderProjects\\Lab1-inmind-\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "images/client.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\client.png"
+    }
+  ]
 }
