@@ -7,7 +7,7 @@ namespace WebApplication1.Controllers;
 [Route("[controller]")]
 public class StudentController : ControllerBase
 {
-    private readonly IStudentHelper _helper;
+    private readonly IStudentHelper _helper; 
 
     public StudentController(IStudentHelper studentHelper)
     {
